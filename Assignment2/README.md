@@ -13,7 +13,7 @@ This repository extends SMS spam classification with **data versioning, experime
 * Loads `raw_data.csv`, cleans text, and splits into train/validation/test sets
 * Tracks **data versions** with DVC (initial split + updated split with new random seed)
 * Prints **target distribution** in each split for both versions
-* **Optional**: Use Google Drive as remote storage
+* **Optional**: Use Google Drive as remote storage (Erroneous).
 
 ### `train.ipynb`
 
