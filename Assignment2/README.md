@@ -22,7 +22,7 @@ This repository extends SMS spam classification with **data versioning, experime
 * Tracks experiments and model versions using MLflow
 * Prints AUCPR for each benchmark model and selects the best
 
-### Outcome
+## Outcome
 
 Demonstrates **data versioning**, **experiment tracking**, and **model versioning** while identifying the best classical ML model for SMS spam detection.
 
