@@ -30,25 +30,25 @@ The `data/` folder contains the datasets used for training and evaluating the mo
 
 ## File Descriptions
 
-**score.py**
+- **score.py**
 Implements the `score()` function that takes a text input, a trained sklearn model, and a threshold, and returns a binary prediction (0 or 1) and a probability score (propensity).
 
-**app.py**
+- **app.py**
 Creates a Flask API with a `/score` POST endpoint that receives text input and returns prediction and propensity in JSON format.
 
-**test.py**
+- **test.py**
 Contains pytest unit tests for the scoring function and integration tests that start the Flask app, send requests to the `/score` endpoint, and validate the responses.
 
-**test_colab.py**
+- **test_colab.py**
 A modified version of the tests adapted to run correctly in the Google Colab environment.
 
-**updated_train.ipynb**
+- **updated_train.ipynb**
 An updated version of the `train.ipynb` notebook from Assignment 2 that trains models and saves the best model in `joblib` format.
 
-**main.ipynb**
+- **main.ipynb**
 Runs the full workflow in Colab: uploads files, runs the test suite, and generates the coverage report.
 
-**coverage.txt**
+- **coverage.txt**
 Contains the coverage report produced by `pytest-cov`.
 
 ## Running Tests
