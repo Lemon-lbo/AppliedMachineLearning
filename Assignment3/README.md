@@ -7,7 +7,7 @@ This assignment implements testing and serving for a spam classification model. 
 ## Repository Structure
 
 ```
-assignment3/
+Assignment3/
 │
 ├── app.py
 ├── score.py
