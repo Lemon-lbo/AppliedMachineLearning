@@ -1,0 +1,33 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.12, pytest-8.4.2, pluggy-1.6.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /content
+plugins: cov-7.0.0, anyio-4.12.1, langsmith-0.7.7, typeguard-4.5.1
+collecting ... collected 15 items
+
+test.py::TestScore::test_smoke PASSED                                    [  6%]
+test.py::TestScore::test_output_format PASSED                            [ 13%]
+test.py::TestScore::test_prediction_is_binary PASSED                     [ 20%]
+test.py::TestScore::test_propensity_range PASSED                         [ 26%]
+test.py::TestScore::test_threshold_zero_always_spam PASSED               [ 33%]
+test.py::TestScore::test_threshold_one_always_ham PASSED                 [ 40%]
+test.py::TestScore::test_obvious_spam PASSED                             [ 46%]
+test.py::TestScore::test_obvious_ham PASSED                              [ 53%]
+test.py::TestFlask::test_flask_smoke PASSED                              [ 60%]
+test.py::TestFlask::test_flask_response_format PASSED                    [ 66%]
+test.py::TestFlask::test_flask_prediction_type PASSED                    [ 73%]
+test.py::TestFlask::test_flask_spam_detection PASSED                     [ 80%]
+test.py::TestFlask::test_flask_ham_detection PASSED                      [ 86%]
+test.py::TestFlask::test_flask_custom_threshold PASSED                   [ 93%]
+test.py::TestFlask::test_flask_missing_text_returns_400 PASSED           [100%]
+
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.12.12-final-0 _______________
+
+Name       Stmts   Miss  Cover   Missing
+----------------------------------------
+app.py        18      1    94%   37
+score.py      14      3    79%   22, 24, 28
+----------------------------------------
+TOTAL         32      4    88%
+============================== 15 passed in 5.35s ==============================
