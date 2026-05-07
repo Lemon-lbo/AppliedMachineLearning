@@ -1,4 +1,4 @@
-# Assignment 4: Containerization and CI
+# Assignment 4: Containerization and Continuous Integration
 
 This assignment adds Docker containerization and a simple continuous integration step on top of the spam classifier Flask app from Assignment 3.
 
