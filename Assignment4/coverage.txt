@@ -1,0 +1,55 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.14.3, pytest-9.0.3, pluggy-1.6.0 -- /Users/suryaeada/Downloads/Assignment 3/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /Users/suryaeada/Downloads/Assignment 3
+plugins: cov-7.1.0
+collecting ... collected 16 items
+
+test.py::TestScore::test_smoke PASSED                                    [  6%]
+test.py::TestScore::test_output_format PASSED                            [ 12%]
+test.py::TestScore::test_prediction_is_binary PASSED                     [ 18%]
+test.py::TestScore::test_propensity_range PASSED                         [ 25%]
+test.py::TestScore::test_threshold_zero_always_spam PASSED               [ 31%]
+test.py::TestScore::test_threshold_one_always_ham PASSED                 [ 37%]
+test.py::TestScore::test_obvious_spam PASSED                             [ 43%]
+test.py::TestScore::test_obvious_ham PASSED                              [ 50%]
+test.py::TestFlask::test_flask_smoke PASSED                              [ 56%]
+test.py::TestFlask::test_flask_response_format PASSED                    [ 62%]
+test.py::TestFlask::test_flask_prediction_type PASSED                    [ 68%]
+test.py::TestFlask::test_flask_spam_detection PASSED                     [ 75%]
+test.py::TestFlask::test_flask_ham_detection PASSED                      [ 81%]
+test.py::TestFlask::test_flask_custom_threshold PASSED                   [ 87%]
+test.py::TestFlask::test_flask_missing_text_returns_400 PASSED           [ 93%]
+test.py::TestDocker::test_docker_score_endpoint PASSED                   [100%]
+
+=============================== warnings summary ===============================
+test.py::TestScore::test_smoke
+  /Users/suryaeada/Downloads/Assignment 3/.venv/lib/python3.14/site-packages/sklearn/base.py:463: InconsistentVersionWarning: Trying to unpickle estimator TfidfTransformer from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+  https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+    warnings.warn(
+
+test.py::TestScore::test_smoke
+  /Users/suryaeada/Downloads/Assignment 3/.venv/lib/python3.14/site-packages/sklearn/base.py:463: InconsistentVersionWarning: Trying to unpickle estimator TfidfVectorizer from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+  https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+    warnings.warn(
+
+test.py::TestScore::test_smoke
+  /Users/suryaeada/Downloads/Assignment 3/.venv/lib/python3.14/site-packages/sklearn/base.py:463: InconsistentVersionWarning: Trying to unpickle estimator LinearSVC from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+  https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+    warnings.warn(
+
+test.py::TestScore::test_smoke
+  /Users/suryaeada/Downloads/Assignment 3/.venv/lib/python3.14/site-packages/sklearn/base.py:463: InconsistentVersionWarning: Trying to unpickle estimator Pipeline from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+  https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================ tests coverage ================================
+_______________ coverage: platform darwin, python 3.14.3-final-0 _______________
+
+Name       Stmts   Miss  Cover   Missing
+----------------------------------------
+score.py      14      3    79%   22, 24, 28
+----------------------------------------
+TOTAL         14      3    79%
+======================= 16 passed, 4 warnings in 10.01s ========================
